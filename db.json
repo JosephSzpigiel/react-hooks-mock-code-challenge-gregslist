@@ -23,6 +23,12 @@
       "description": "Beautiful couch",
       "image": "./images/couch.jpg",
       "location": "Bay Ridge"
+    },
+    {
+      "description": "Mom's email",
+      "location": "banana",
+      "image": "https://i.guim.co.uk/img/media/2b8c195b8920a52f870ab3f61db1b060accfe09e/0_84_2200_1320/master/2200.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=a7718baf50c8cecaeab691a5a0d38671",
+      "id": 7
     }
   ]
 }

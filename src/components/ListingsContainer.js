@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ListingCard from "./ListingCard";
+import NewItemForm from "./NewItemForm";
 
 function ListingsContainer({searchTerm}) {
   const [listings, setListings] = useState([])
@@ -14,7 +15,7 @@ function ListingsContainer({searchTerm}) {
   })
 
   if (sort === true){
-    filteredListings = filteredListings.sort((a, b) => a.location > b.location ? 1: -1)
+    filteredListings = filteredListings.sort((a, b) => a.location.toLowerCase() > b.location.toLowerCase() ? 1: -1)
   }
 
   const listingComponents = filteredListings.map((listing)=>{
@@ -27,6 +28,7 @@ function ListingsContainer({searchTerm}) {
       <ul className="cards">
         {listingComponents}
       </ul>
+      <NewItemForm setListings={setListings}/>
     </main>
   );
 }
